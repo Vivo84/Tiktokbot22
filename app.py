@@ -10,7 +10,7 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("TIKTOD V3")
+        self.title("TIKTOD 22")
         self.geometry("800x600")
         self.iconbitmap(resource_path("assets/logo.ico"))
 
@@ -92,13 +92,13 @@ class App(ctk.CTk):
         self.version_label = ctk.CTkLabel(self, text="Version 1.2.0", fg_color="transparent")
         self.version_label.grid(row=5, column=1, padx=20, pady=(10, 0), sticky="se")
 
-        self.github_link = ctk.CTkLabel(self, text="https://github.com/kangoka/tiktodv3", fg_color="transparent", cursor="hand2")
+        self.github_link = ctk.CTkLabel(self, text="https://github.com/kangoka/tikto22", fg_color="transparent", cursor="hand2")
         self.github_link.grid(row=6, column=1, padx=20, pady=(0, 10), sticky="se")
         self.github_link.bind("<Button-1>", lambda e: self.open_github())
 
     def open_github(self):
         import webbrowser
-        webbrowser.open("https://github.com/kangoka/tiktodv3")
+        webbrowser.open("https://github.com/kangoka/tikto22")
 
     def switch_theme(self):
         if self.theme_switch_var.get() == "dark":
@@ -127,7 +127,7 @@ class App(ctk.CTk):
             if not self.running:
                 self.start_time = time.time() - self.elapsed_time  # Continue from the last elapsed time
                 self.log_text.delete(1.0, tk.END)  # Clear the log area
-                log_message(self, "TIKTOD V3")
+                log_message(self, "TIKTOD 22")
                 log_message(self, "Log:")
 
             self.running = True  # Set the flag to True
